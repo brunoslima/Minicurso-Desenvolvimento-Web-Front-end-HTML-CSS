@@ -1,0 +1,9 @@
+Hospedar seu site no GitHub
+
+1) Crie um repositório no GitHub com o seguinte nome: username.github.io
+2) Coloque todas as paginas .html e a pasta do CSS dentro do repositório criado
+3) De um commit master
+
+Pronto basta acessar em seu navegador o seguinte endereço username.github.io e utilizar seu site já hospedado.
+
+OBS: username é o seu nome de usuário no GitHub.

@@ -1,0 +1,338 @@
+/*Inicio base css */
+*{
+	margin: 0; padding: 0; /*Boa pratica definir nossa margem e padding como 0*/
+	/*Margin = Simplesmente adiciona uma margem ao seu elemento, espaçamento externo*/
+	/*Padding = É um espaçamento interno ao seu elemento*/
+	/*Exemplo do painel com texto dentro escrito....*/
+}
+
+@font-face{
+	src: url("fonts/OpenSans-Regular.ttf");
+	font-family: OpenSans;
+}
+
+li{
+	list-style: none; /*Retira os pontos da lista - Utilizado no menu e na lista da organização*/
+}
+
+section{
+	width: 90%;
+	margin-left: 5%;
+	display: block; /*Display block elementos um abaixo do outro mantendo propriedade de tamanho*/
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: OpenSans;
+}
+
+section h1{
+	display: block; /*Display block elementos um abaixo do outro mantendo propriedade de tamanho*/
+	margin-left: 30px;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+section h2{
+	font-size: 20px;
+}
+
+section p{
+	text-indent: 40px; /*Tamanho do tab do parágrafo*/
+	font-size: 16px;
+	text-align: justify;
+	margin: 15px 0 10px; /*margin: top right bottom left*/
+	/*margin: 25px 10px; - Significa 25px cima e baixo e 10px esquerda direita*/
+	/*margin: 25px; - Significa 25px em todos lados*/
+}
+
+p a{
+	color: #000;
+	text-decoration: none;
+}
+
+p a:hover{ /*Hover define um estilo ao passar o mouse em cima*/
+	text-decoration: underline; /*Deixa o underline*/
+}
+/*Fim base css */
+
+/*Inicio Cabeçalho css */
+.barra-superior{
+	display: block;
+	background-color: rgba(67, 84, 92, 1); /*Cinza*/ /*Vermelho, Verde, Azul e Alpha, sendo a opacidade*/
+	height: 50px; 
+	width: calc(100% - 30px); /*100% da tela menos 30px*/
+	padding: 0 15px; /*padding: 25px 10px; - Significa 25px cima e baixo e 10px esquerda direita*/
+}
+
+.cabecalho-principal{
+	display: block; /*Display block elementos um abaixo do outro mantendo propriedade de tamanho*/
+	width: 100%; 
+	height: 200px; 
+}
+
+.cabecalho-principal h1{
+	display: block;
+	line-height: 200px; /*Espaçamento vertical entre palavras por exemplo*/ 
+	text-align: center;
+	font-size: 90px;
+	font-family: OpenSans;
+	color: #000; /*Preto*/
+	text-transform: uppercase;
+}
+
+.redes-sociais{
+	float: right;
+	display: inline-block; /*Alinhados um do lado do outro, mas em bloco, preservando tamanho*/
+	width: 50px; 
+	height: 50px;
+	background-position: 13px 13px; /*Define a posição inicial da imagem em um plano, por padrao fica superior esquerdo*/
+	background-size: 24px 24px;
+	background-repeat: no-repeat; /*Colocada para nao repetir a imagem*/
+	cursor: pointer; /*Curso de clique na forma de uma maozinha*/
+}
+
+.face{
+	background-image: url("images/face.wix_mp");
+}
+
+.youtube{
+	background-image: url("images/youtube.png");
+}
+
+.twitter{	
+	background-image: url("images/twitter.png");
+}
+/*Fim cabeçalho css */
+
+/*Inicio rodape css */
+.descricao{
+	display: block;
+	background-color: rgba(148, 31, 25, 1); /*Vinho*/
+	padding: 40px 35px;
+}
+
+
+.barra-inferior{
+	/*position: relative;*/
+	background-color: rgba(67, 84, 92, 1); /*Cinza*/
+	height: 50px; 
+	width: calc(100% - 30px);
+	padding: 0 15px;
+}
+
+.barra-inferior  p{
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	color: #fff; /*Branco*/
+	font-family: OpenSans;
+	font-size: 12px;
+}
+
+.grupo-dupla{
+	padding: 0 20px;
+	display: inline-block;
+	color: #fff;
+	width: calc(50% - 45px);
+	font-family: OpenSans;
+	vertical-align: top; /*Para ficar posicionado no topo da div não na parte inferior*/
+}
+
+
+.grupo-dupla h1{
+	display: inline-block;
+	padding: 5px 15px 2px 0;
+	border-bottom: 1px solid #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.grupo-dupla p{
+	padding: 5px 0 10px;
+	font-size: 13px; 
+	text-align: justify;
+}
+/*Fim ropade css */
+
+/*Inicio menu css */
+.menu-principal{
+	display: flex; /*Define seu conteudo como flexivel, deste modo conseguimos usar o justify-content*/
+	justify-content: center; /*Vai centralizar o conteudo inteiro que engloba o .menu-principal*/
+	padding: 0 30px;
+	background-color: rgba(148, 31, 25, 1); /*Vinho*/
+	font-family: OpenSans;
+	color: #fff; 
+	font-size: 15px;
+	font-weight: bold; /*Deixar a font em negrito*/
+	text-transform: uppercase;
+}
+
+.menu-item{
+	/*position: relative;*/
+	display: inline-flex;
+	/*background-color: inherit;*/
+	padding: 13px 20px;
+	cursor: pointer;
+}
+
+.menu-item a {
+	text-decoration: none;
+	color: #fff;
+}
+.menu-item:hover{
+	background-color: rgba(211, 35, 0, 1); /*Vermelho*/
+}
+/*Fim menu css*/
+
+/*Inicio sobre css*/
+.conteudo-sobre h1 {
+	font-size: 50px;
+}
+
+.conteudo-sobre p {
+	font-size: 20px;
+	text-align: justify;
+}
+/*Fim sobre css*/
+
+/*Inicio programação css*/
+.tabela-programacao {
+	margin: 0 auto;
+}
+
+.tabela-programacao .horario{
+	width: 75px;
+}
+
+table{
+	padding-top: 30px;
+}
+
+table th {
+	background-color: #000; /*Preto*/
+	color: white;
+	text-align: center;
+	width: 230px;
+	height: 30px;
+}
+
+table td{
+	background-color: #eee;
+	color: rgb(111, 111, 111); /*Cinza*/
+	width: 140px;
+	height: 30px;
+	text-align: center;
+	font-size: 15px;
+}	
+/*Fim programação css*/
+
+/*Inicio organizacao css*/
+.conteudo-comissao{
+	text-align: center;
+	margin-top: 25px;
+}
+
+.conteudo-comissao li{
+	margin-top: 10px;
+}
+/*Fim organizacao css*/
+
+/*Inicio inscrições css*/
+.conteudo-formulario{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+form{
+	display: inline-block;
+	padding: 30px 35px 40px;
+}
+
+form label{
+	margin-left: 5px;
+}
+
+form input, form select, form textarea{
+	padding: 5px 8px;
+	margin: 3px 0 10px;
+	font-family: OpenSans;
+	font-size: 16px;
+}
+
+form button{
+	margin-top: 15px;
+	padding: 3px 6px;
+	font-family: OpenSans;
+	font-size: 16px;
+}
+
+form button:hover{
+	background: #0fdb3e; /*Verde*/
+}
+/*Fim inscrições css*/
+
+/*Inicio galeria css*/
+.fotos{
+	margin-top: 40px;
+}
+
+.fotos h1{
+	text-align: center;
+	font-size: 35px;
+}
+
+.fotos img{
+	margin-left: 2.5%;
+	height: 400px;
+}
+
+.imagens{
+	display: inline-block; /*Alinhados um do lado do outro, mas em bloco, preservando tamanho*/
+}
+
+.img-pequena{
+	width: 20%;
+	border: 2px solid #000;
+}
+
+.img-media{
+	width: 30%;
+	border: 2px solid #000;
+}
+
+.img-grande{
+	width: 40%;
+	border: 2px solid #000;
+}
+
+.video{
+	margin-top: 40px;
+}
+
+.video h1{
+	text-align: center;
+	font-size: 35px;
+}
+
+.video video{
+	margin-left: 20%;
+}
+/*Fim galeria css*/
+
+/*Inicio endereço css*/
+.maps {
+	width: 40%;
+	display: inline-block;
+	margin-left: 5%;
+}
+
+.conteudo-endereco {
+	width: 40%;
+	display: inline-block;
+	margin-left: 10%;
+	vertical-align: top; /*Para ficar posicionado no topo da div não na parte inferior*/
+}
+
+.conteudo-endereco p{
+	text-indent: 0; /*Para retirar o tab da tag paragrafo*/
+}
+/*Fim endereço css*/
