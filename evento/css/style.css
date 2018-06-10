@@ -1,3 +1,4 @@
+/*-------------------------------------------*/
 /*Inicio base css */
 *{
 	margin: 0; padding: 0; /*Boa pratica definir nossa margem e padding como 0*/
@@ -27,7 +28,7 @@ section{
 section h1{
 	display: block; /*Display block elementos um abaixo do outro mantendo propriedade de tamanho*/
 	margin-left: 30px;
-	font-size: 50px;
+	font-size: 40px;
 	margin-bottom: 20px;
 }
 
@@ -40,8 +41,6 @@ section p{
 	font-size: 16px;
 	text-align: justify;
 	margin: 15px 0 10px; /*margin: top right bottom left*/
-	/*margin: 25px 10px; - Significa 25px cima e baixo e 10px esquerda direita*/
-	/*margin: 25px; - Significa 25px em todos lados*/
 }
 
 p a{
@@ -53,7 +52,10 @@ p a:hover{ /*Hover define um estilo ao passar o mouse em cima*/
 	text-decoration: underline; /*Deixa o underline*/
 }
 /*Fim base css */
+/*-------------------------------------------*/
 
+
+/*-------------------------------------------*/
 /*Inicio Cabeçalho css */
 .barra-superior{
 	display: block;
@@ -81,35 +83,38 @@ p a:hover{ /*Hover define um estilo ao passar o mouse em cima*/
 
 .redes-sociais{
 	float: right;
-	display: inline-block; /*Alinhados um do lado do outro, mas em bloco, preservando tamanho*/
-	width: 50px; 
-	height: 50px;
-	background-position: 13px 13px; /*Define a posição inicial da imagem em um plano, por padrao fica superior esquerdo*/
-	background-size: 24px 24px;
-	background-repeat: no-repeat; /*Colocada para nao repetir a imagem*/
+	width: 10%;
 	cursor: pointer; /*Curso de clique na forma de uma maozinha*/
 }
 
-.face{
-	background-image: url("images/face.wix_mp");
+.img-sociais{
+	width: 30px; 
+	height: 30px;
+	padding-top: 10px;
+	padding-right: 6px;
+	padding-left: 6px;
+	background-repeat: no-repeat; /*Colocada para nao repetir a imagem*/
 }
 
-.youtube{
-	background-image: url("images/youtube.png");
+.img-sociais:hover{
+	width: 35px; 
+	height: 35px;
+	padding-top: 4px;
+	padding-right: 3px;
+	padding-left: 3px;
 }
 
-.twitter{	
-	background-image: url("images/twitter.png");
-}
 /*Fim cabeçalho css */
+/*-------------------------------------------*/
 
+
+/*-------------------------------------------*/
 /*Inicio rodape css */
 .descricao{
 	display: block;
 	background-color: rgba(148, 31, 25, 1); /*Vinho*/
 	padding: 40px 35px;
 }
-
 
 .barra-inferior{
 	/*position: relative;*/
@@ -137,7 +142,6 @@ p a:hover{ /*Hover define um estilo ao passar o mouse em cima*/
 	vertical-align: top; /*Para ficar posicionado no topo da div não na parte inferior*/
 }
 
-
 .grupo-dupla h1{
 	display: inline-block;
 	padding: 5px 15px 2px 0;
@@ -152,7 +156,10 @@ p a:hover{ /*Hover define um estilo ao passar o mouse em cima*/
 	text-align: justify;
 }
 /*Fim ropade css */
+/*-------------------------------------------*/
 
+
+/*-------------------------------------------*/
 /*Inicio menu css */
 .menu-principal{
 	display: flex; /*Define seu conteudo como flexivel, deste modo conseguimos usar o justify-content*/
@@ -167,9 +174,7 @@ p a:hover{ /*Hover define um estilo ao passar o mouse em cima*/
 }
 
 .menu-item{
-	/*position: relative;*/
 	display: inline-flex;
-	/*background-color: inherit;*/
 	padding: 13px 20px;
 	cursor: pointer;
 }
@@ -182,7 +187,10 @@ p a:hover{ /*Hover define um estilo ao passar o mouse em cima*/
 	background-color: rgba(211, 35, 0, 1); /*Vermelho*/
 }
 /*Fim menu css*/
+/*-------------------------------------------*/
 
+
+/*-------------------------------------------*/
 /*Inicio sobre css*/
 .conteudo-sobre h1 {
 	font-size: 50px;
@@ -193,7 +201,10 @@ p a:hover{ /*Hover define um estilo ao passar o mouse em cima*/
 	text-align: justify;
 }
 /*Fim sobre css*/
+/*-------------------------------------------*/
 
+
+/*-------------------------------------------*/
 /*Inicio programação css*/
 .tabela-programacao {
 	margin: 0 auto;
@@ -224,7 +235,10 @@ table td{
 	font-size: 15px;
 }	
 /*Fim programação css*/
+/*-------------------------------------------*/
 
+
+/*-------------------------------------------*/
 /*Inicio organizacao css*/
 .conteudo-comissao{
 	text-align: center;
@@ -235,7 +249,10 @@ table td{
 	margin-top: 10px;
 }
 /*Fim organizacao css*/
+/*-------------------------------------------*/
 
+
+/*-------------------------------------------*/
 /*Inicio inscrições css*/
 .conteudo-formulario{
 	margin-top: 20px;
@@ -269,7 +286,10 @@ form button:hover{
 	background: #0fdb3e; /*Verde*/
 }
 /*Fim inscrições css*/
+/*-------------------------------------------*/
 
+
+/*-------------------------------------------*/
 /*Inicio galeria css*/
 .fotos{
 	margin-top: 40px;
@@ -317,7 +337,10 @@ form button:hover{
 	margin-left: 20%;
 }
 /*Fim galeria css*/
+/*-------------------------------------------*/
 
+
+/*-------------------------------------------*/
 /*Inicio endereço css*/
 .maps {
 	width: 40%;
@@ -336,3 +359,4 @@ form button:hover{
 	text-indent: 0; /*Para retirar o tab da tag paragrafo*/
 }
 /*Fim endereço css*/
+/*-------------------------------------------*/
