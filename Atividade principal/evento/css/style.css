@@ -196,20 +196,6 @@ p a:hover{ /*Hover define um estilo ao passar o mouse em cima*/
 
 
 /*-------------------------------------------*/
-/*Inicio sobre css*/
-.conteudo-sobre h1 {
-	font-size: 50px;
-}
-
-.conteudo-sobre p {
-	font-size: 20px;
-	text-align: justify;
-}
-/*Fim sobre css*/
-/*-------------------------------------------*/
-
-
-/*-------------------------------------------*/
 /*Inicio programação css*/
 .tabela-programacao {
 	margin: 0 auto;
@@ -364,4 +350,17 @@ form button:hover{
 	text-indent: 0; /*Para retirar o tab da tag paragrafo*/
 }
 /*Fim endereço css*/
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+/*Inicio sobre css*/
+/*.conteudo-sobre h1 {
+	font-size: 50px;
+}
+
+.conteudo-sobre p {
+	font-size: 20px;
+	text-align: justify;
+}*/
+/*Fim sobre css*/
 /*-------------------------------------------*/
